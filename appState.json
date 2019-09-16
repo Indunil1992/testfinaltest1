@@ -1,0 +1,105 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "767527de-34e6-4c88-bab0-a0dd28bae37c": {
+        "id": "767527de-34e6-4c88-bab0-a0dd28bae37c",
+        "parent": null,
+        "name": "testfinaltest1",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "14bf91ab-cdbe-452c-a153-e3986453dc56"
+        ],
+        "isRemovable": false,
+        "filePath": "testfinaltest1"
+      },
+      "14bf91ab-cdbe-452c-a153-e3986453dc56": {
+        "id": "14bf91ab-cdbe-452c-a153-e3986453dc56",
+        "parent": "767527de-34e6-4c88-bab0-a0dd28bae37c",
+        "name": "function.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "testfinaltest1/function.js",
+        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 1
+        },
+        "triggers": [
+          {
+            "resourceName": "pubsubcloudBuilds",
+            "config": {}
+          }
+        ]
+      },
+      "cdbcea24-db02-4362-8bea-93740883fb93": {
+        "id": "cdbcea24-db02-4362-8bea-93740883fb93",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js",
+        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.testfinaltest1function = require(\"./testfinaltest1/function.js\").handler;"
+      },
+      "53d8aad3-c669-44ac-aeb9-c88592d8f777": {
+        "id": "53d8aad3-c669-44ac-aeb9-c88592d8f777",
+        "parent": null,
+        "name": "main.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "main.py",
+        "code": "# This file is used to register all your cloud functions in GCP.\n# DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\n"
+      }
+    },
+    "rootNode": "767527de-34e6-4c88-bab0-a0dd28bae37c",
+    "openFiles": [
+      "14bf91ab-cdbe-452c-a153-e3986453dc56"
+    ],
+    "currentFileId": "14bf91ab-cdbe-452c-a153-e3986453dc56",
+    "resources": {
+      "pubsubcloudBuilds": {
+        "name": "pubsubcloudBuilds",
+        "type": "pubsub",
+        "config": {
+          "mode": 1,
+          "topic": {
+            "name": "cloud-builds",
+            "subscriptions": []
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "testfinaltest1",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east1",
+    "platform": "GCP",
+    "platformRegions": {},
+    "lastSave": 1568637631544
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "testfinaltest1",
+      "url": "https://github.com/Indunil1992/testfinaltest1"
+    }
+  }
+}
